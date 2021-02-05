@@ -1,7 +1,8 @@
 {
   "name": "react-assessment",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Assessment",
+  "repository": "https://github.com/Adthena/react-assessment",
   "main": "index.html",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --mode development",
