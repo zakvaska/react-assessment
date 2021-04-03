@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Row = styled.div`
@@ -29,86 +29,77 @@ const Users = styled.div`
 const debounce = (func, wait = 5000) => {
   let timeout = null;
 
-  const cleanup = () => {
+  const cleanup = () => {    
     if (timeout) clearTimeout(timeout);
   };
 
   return () => {
     cleanup();
 
-    timeout = setTimeout(func, wait);
+    timeout = setTimeout(func, wait);    
   };
 };
 
-export default class UserList extends Component {
-  constructor(props) {
-    super(props);
+export const UserList = () => {
+  const [data, setData] = useState([]);
+  const [filter, setFilter] = useState('');
+  const [value, setValue] = useState('');
 
-    this.state = {
-      data: [],
-      filter: '',
-      value: ''
-    };
-  }
-
-  fetchData = () => {
-    const { filter } = this.state;
+  const fetchData = () => {
+    console.log('fetch');
     fetch(`https://jsonplaceholder.typicode.com/users${filter ? `?username=${encodeURIComponent(filter)}` : ''}`).then(async (response) => {
-      const data = await response.json();
-      this.setState({ data });
+      const newData = await response.json();
+      setData(newData);
     });
-  }
+  };
 
-  componentDidMount() {
-    this.fetchData();
-  }
+  useEffect(() => {
+    fetchData();
+  }, [filter]);
 
-  render() {
-    const { data, value } = this.state;
+  const fetchNewData = (e) => {
+    setFilter(e.target.value);
+  };
 
-    const setFilter = (e) => {
-      this.setState({ value: e.target.value });
-      const debounceFn = debounce((e) => {
-        this.setState({ filter: e.target.value }, this.fetchData);
-      });
+  const changeValue = (e) => {
+    setValue(e.target.value);
+    const debounceFn = debounce(fetchNewData.bind(null, e));
+    debounceFn();
+  };
 
-      debounceFn(e);
-    };
-
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          Filter:
-          <input
-            type="text"
-            onChange={setFilter}
-            value={value}
-            placeholder="Enter username"
-          />
-        </div>
-        <Users>
-          {data.map((user) => (
-            <Row key={user.id}>
-              <UserInfo>
-                <span>{`Name: ${user.name}`}</span>
-                <span>{`Username: ${user.username}`}</span>
-              </UserInfo>
-              <div>
-                <div>
-                  <span>{user.address.street}</span>
-                  <span>{user.address.suite}</span>
-                  <span>{user.address.city}</span>
-                  <span>{user.address.zipcode}</span>
-                </div>
-                <div>
-                  <span>{user.email}</span>
-                  <span>{user.phone}</span>
-                </div>
-              </div>
-            </Row>
-          ))}
-        </Users>
+        Filter:
+        <input
+          type="text"
+          onChange={changeValue}
+          value={value}
+          placeholder="Enter username"
+        />
       </div>
-    );
-  }
-}
+      <Users>
+        {data.map((user) => (
+          <Row key={user.id}>
+            <UserInfo>
+              <span>{`Name: ${user.name}`}</span>
+              <span>{`Username: ${user.username}`}</span>
+            </UserInfo>
+            <div>
+              <div>
+                <span>{user.address.street}</span>
+                <span>{user.address.suite}</span>
+                <span>{user.address.city}</span>
+                <span>{user.address.zipcode}</span>
+              </div>
+              <div>
+                <span>{user.email}</span>
+                <span>{user.phone}</span>
+              </div>
+            </div>
+          </Row>
+        ))}
+      </Users>
+    </div>
+  );
+};
