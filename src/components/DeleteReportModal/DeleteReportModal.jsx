@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import Modal from '../Modal/Modal';
@@ -75,6 +76,12 @@ const DeleteReportModal = ({ modalCloseHandler, onConfirm, onCancel }) => {
       </ModalFooter>
     </Modal>
   );
+};
+
+DeleteReportModal.propTypes = {
+  modalCloseHandler: PropTypes.func.isRequired,
+  onConfirm: PropTypes.func.isRequired,
+  onCancel: PropTypes.func.isRequired
 };
 
 export default DeleteReportModal;

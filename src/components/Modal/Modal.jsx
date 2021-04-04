@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { ModalDialog, ModalWrapper } from '../styled-components/Task';
 
 const Modal = ({ modalCloseHandler, children, color }) => {
@@ -24,6 +25,16 @@ const Modal = ({ modalCloseHandler, children, color }) => {
       </ModalDialog>
     </ModalWrapper>
   );
+};
+
+Modal.propTypes = {
+  modalCloseHandler: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string
+};
+
+Modal.defaultProps = {
+  color: 'black'
 };
 
 export default Modal;

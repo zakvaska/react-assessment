@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import Modal from '../Modal/Modal';
@@ -25,5 +26,11 @@ const DeleteFilesModal = ({ modalCloseHandler, onConfirm, onCancel }) => (
     </ModalFooter>
   </Modal>
 );
+
+DeleteFilesModal.propTypes = {
+  modalCloseHandler: PropTypes.func.isRequired,
+  onConfirm: PropTypes.func.isRequired,
+  onCancel: PropTypes.func.isRequired
+};
 
 export default DeleteFilesModal;
