@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import fetch from 'node-fetch';
 
 const Row = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ const UserInfo = styled.div`
   width: 260px;
 `;
 
-const Users = styled.div`
+export const Users = styled.div`
   max-height: 300px;
   overflow: scroll;
   margin-top: 15px;

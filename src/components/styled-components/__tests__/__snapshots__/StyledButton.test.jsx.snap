@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledButton renders correctly 1`] = `
+.c0 {
+  color: #24619a;
+  background: #e8f4ff;
+  border: 1px solid transparent;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.c0:hover:not(:disabled) {
+  background: white;
+  border: 1px solid #24619a;
+}
+
+.c0:disabled {
+  color: #24619a73;
+  cursor: default;
+}
+
+<div>
+  <button
+    class="c0"
+  />
+</div>
+`;
+
+exports[`StyledSelect renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 7rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: .5rem;
+  font-size: 1rem;
+  color: #3970a3;
+  border-color: #9d9d9d;
+}
+
+.c0 > option {
+  font-weight: bold;
+}
+
+<div>
+  <select
+    class="c0"
+  />
+</div>
+`;
+
+exports[`StyledSelect renders correctly 2`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  height: 7rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  font-size: 1rem;
+  color: #3970a3;
+  border-color: #9d9d9d;
+}
+
+.c0 > option {
+  font-weight: bold;
+}
+
+<div>
+  <select
+    class="c0"
+  />
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+.c0 {
+  max-height: 300px;
+  overflow: scroll;
+  margin-top: 15px;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;

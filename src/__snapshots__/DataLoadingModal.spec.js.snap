@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserList renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      Filter:
+      <input
+        placeholder="Enter username"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="UserList__Users-sc-1is5oap-2 bMiOrW"
+    />
+  </div>
+</div>
+`;
