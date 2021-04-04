@@ -29,14 +29,14 @@ const Users = styled.div`
 const debounce = (func, wait = 5000) => {
   let timeout = null;
 
-  const cleanup = () => {    
+  const cleanup = () => {
     if (timeout) clearTimeout(timeout);
   };
 
   return () => {
     cleanup();
 
-    timeout = setTimeout(func, wait);    
+    timeout = setTimeout(func, wait);
   };
 };
 
@@ -46,7 +46,6 @@ export const UserList = () => {
   const [value, setValue] = useState('');
 
   const fetchData = () => {
-    console.log('fetch');
     fetch(`https://jsonplaceholder.typicode.com/users${filter ? `?username=${encodeURIComponent(filter)}` : ''}`).then(async (response) => {
       const newData = await response.json();
       setData(newData);
