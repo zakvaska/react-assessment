@@ -78,7 +78,7 @@ export const UserList = () => {
           placeholder="Enter username"
         />
       </div>
-      <Users>
+      <Users data-testid="users">
         {data.map((user) => (
           <Row key={user.id}>
             <UserInfo>

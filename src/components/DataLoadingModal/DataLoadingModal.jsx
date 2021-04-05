@@ -6,7 +6,7 @@ import { Spinner, SpinnerWrapper, CenteredLabel } from '../styled-components/Tas
 const DataLoadingModal = ({ modalCloseHandler }) => (
   <Modal modalCloseHandler={modalCloseHandler} color="#4b8ed2">
     <SpinnerWrapper>
-      <Spinner />
+      <Spinner data-testid="modal" />
     </SpinnerWrapper>
     <CenteredLabel>Data is loading</CenteredLabel>
   </Modal>

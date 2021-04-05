@@ -159,17 +159,3 @@ exports[`DeleteFilesModal renders correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`renders correctly 1`] = `
-.c0 {
-  max-height: 300px;
-  overflow: scroll;
-  margin-top: 15px;
-}
-
-<div>
-  <div
-    class="c0"
-  />
-</div>
-`;

@@ -60,6 +60,7 @@ exports[`DataLoadingModal renders correctly 1`] = `
       >
         <div
           class="c3"
+          data-testid="modal"
         />
       </div>
       <div
@@ -69,19 +70,5 @@ exports[`DataLoadingModal renders correctly 1`] = `
       </div>
     </div>
   </div>
-</div>
-`;
-
-exports[`renders correctly 1`] = `
-.c0 {
-  max-height: 300px;
-  overflow: scroll;
-  margin-top: 15px;
-}
-
-<div>
-  <div
-    class="c0"
-  />
 </div>
 `;

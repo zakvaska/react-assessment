@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change value state via text input 1`] = `
+<div>
+  <div>
+    <div>
+      Filter:
+      <input
+        placeholder="Enter username"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="UserList__Users-sc-1is5oap-2 bMiOrW"
+      data-testid="users"
+    >
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Leanne Graham
+          </span>
+          <span>
+            Username: Bret
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Kulas Light
+            </span>
+            <span>
+              Apt. 556
+            </span>
+            <span>
+              Gwenborough
+            </span>
+            <span>
+              92998-3874
+            </span>
+          </div>
+          <div>
+            <span>
+              Sincere@april.biz
+            </span>
+            <span>
+              1-770-736-8031 x56442
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Ervin Howell
+          </span>
+          <span>
+            Username: Antonette
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Victor Plains
+            </span>
+            <span>
+              Suite 879
+            </span>
+            <span>
+              Wisokyburgh
+            </span>
+            <span>
+              90566-7771
+            </span>
+          </div>
+          <div>
+            <span>
+              Shanna@melissa.tv
+            </span>
+            <span>
+              010-692-6593 x09125
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Clementine Bauch
+          </span>
+          <span>
+            Username: Samantha
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Douglas Extension
+            </span>
+            <span>
+              Suite 847
+            </span>
+            <span>
+              McKenziehaven
+            </span>
+            <span>
+              59590-4157
+            </span>
+          </div>
+          <div>
+            <span>
+              Nathan@yesenia.net
+            </span>
+            <span>
+              1-463-123-4447
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Patricia Lebsack
+          </span>
+          <span>
+            Username: Karianne
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Hoeger Mall
+            </span>
+            <span>
+              Apt. 692
+            </span>
+            <span>
+              South Elvis
+            </span>
+            <span>
+              53919-4257
+            </span>
+          </div>
+          <div>
+            <span>
+              Julianne.OConner@kory.org
+            </span>
+            <span>
+              493-170-9623 x156
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Chelsey Dietrich
+          </span>
+          <span>
+            Username: Kamren
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Skiles Walks
+            </span>
+            <span>
+              Suite 351
+            </span>
+            <span>
+              Roscoeview
+            </span>
+            <span>
+              33263
+            </span>
+          </div>
+          <div>
+            <span>
+              Lucio_Hettinger@annie.ca
+            </span>
+            <span>
+              (254)954-1289
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Mrs. Dennis Schulist
+          </span>
+          <span>
+            Username: Leopoldo_Corkery
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Norberto Crossing
+            </span>
+            <span>
+              Apt. 950
+            </span>
+            <span>
+              South Christy
+            </span>
+            <span>
+              23505-1337
+            </span>
+          </div>
+          <div>
+            <span>
+              Karley_Dach@jasper.info
+            </span>
+            <span>
+              1-477-935-8478 x6430
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Kurtis Weissnat
+          </span>
+          <span>
+            Username: Elwyn.Skiles
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Rex Trail
+            </span>
+            <span>
+              Suite 280
+            </span>
+            <span>
+              Howemouth
+            </span>
+            <span>
+              58804-1099
+            </span>
+          </div>
+          <div>
+            <span>
+              Telly.Hoeger@billy.biz
+            </span>
+            <span>
+              210.067.6132
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Nicholas Runolfsdottir V
+          </span>
+          <span>
+            Username: Maxime_Nienow
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Ellsworth Summit
+            </span>
+            <span>
+              Suite 729
+            </span>
+            <span>
+              Aliyaview
+            </span>
+            <span>
+              45169
+            </span>
+          </div>
+          <div>
+            <span>
+              Sherwood@rosamond.me
+            </span>
+            <span>
+              586.493.6943 x140
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Glenna Reichert
+          </span>
+          <span>
+            Username: Delphine
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Dayna Park
+            </span>
+            <span>
+              Suite 449
+            </span>
+            <span>
+              Bartholomebury
+            </span>
+            <span>
+              76495-3109
+            </span>
+          </div>
+          <div>
+            <span>
+              Chaim_McDermott@dana.io
+            </span>
+            <span>
+              (775)976-6794 x41206
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 enbURJ"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 eDtQHu"
+        >
+          <span>
+            Name: Clementina DuBuque
+          </span>
+          <span>
+            Username: Moriah.Stanton
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Kattie Turnpike
+            </span>
+            <span>
+              Suite 198
+            </span>
+            <span>
+              Lebsackbury
+            </span>
+            <span>
+              31428-2261
+            </span>
+          </div>
+          <div>
+            <span>
+              Rey.Padberg@karina.biz
+            </span>
+            <span>
+              024-648-3804
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
